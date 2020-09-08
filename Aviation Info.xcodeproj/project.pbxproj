@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,18 @@
 		676740D6250736F600C87112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676740D4250736F600C87112 /* Main.storyboard */; };
 		676740D8250736F800C87112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676740D7250736F800C87112 /* Assets.xcassets */; };
 		676740DB250736F800C87112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676740D9250736F800C87112 /* LaunchScreen.storyboard */; };
+		676740E72507377D00C87112 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740E62507377D00C87112 /* Dimension.swift */; };
+		676740E92507378800C87112 /* BodyDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740E82507378800C87112 /* BodyDimension.swift */; };
+		676740EB2507379200C87112 /* EngineDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740EA2507379200C87112 /* EngineDimension.swift */; };
+		676740ED2507379900C87112 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740EC2507379900C87112 /* Plane.swift */; };
+		676740EF250737A400C87112 /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740EE250737A400C87112 /* Manufacturer.swift */; };
+		676740F1250737B500C87112 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740F0250737B500C87112 /* Engine.swift */; };
+		676740F525073AF400C87112 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676740F425073AF400C87112 /* GoogleService-Info.plist */; };
+		F759D2294F8F5199615F8D18 /* Pods_Aviation_Info.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CE897118E2213496C251BC /* Pods_Aviation_Info.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CDCA19CAF0FD721C7452CB2 /* Pods-Aviation Info.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviation Info.release.xcconfig"; path = "Target Support Files/Pods-Aviation Info/Pods-Aviation Info.release.xcconfig"; sourceTree = "<group>"; };
 		676740CB250736F600C87112 /* Aviation Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aviation Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		676740CE250736F600C87112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		676740D0250736F600C87112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,15 @@
 		676740D7250736F800C87112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		676740DA250736F800C87112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		676740DC250736F800C87112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		676740E62507377D00C87112 /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		676740E82507378800C87112 /* BodyDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyDimension.swift; sourceTree = "<group>"; };
+		676740EA2507379200C87112 /* EngineDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineDimension.swift; sourceTree = "<group>"; };
+		676740EC2507379900C87112 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		676740EE250737A400C87112 /* Manufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
+		676740F0250737B500C87112 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		676740F425073AF400C87112 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9E33D50BE05A5225951F2398 /* Pods-Aviation Info.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviation Info.debug.xcconfig"; path = "Target Support Files/Pods-Aviation Info/Pods-Aviation Info.debug.xcconfig"; sourceTree = "<group>"; };
+		B6CE897118E2213496C251BC /* Pods_Aviation_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aviation_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F759D2294F8F5199615F8D18 /* Pods_Aviation_Info.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				676740CD250736F600C87112 /* Aviation Info */,
 				676740CC250736F600C87112 /* Products */,
+				E9A1DF1D7CE2F1B1D656EFE4 /* Pods */,
+				94A3B7EEDCA13EB3B225EE7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,71 @@
 		676740CD250736F600C87112 /* Aviation Info */ = {
 			isa = PBXGroup;
 			children = (
-				676740CE250736F600C87112 /* AppDelegate.swift */,
-				676740D0250736F600C87112 /* SceneDelegate.swift */,
-				676740D2250736F600C87112 /* ViewController.swift */,
-				676740D4250736F600C87112 /* Main.storyboard */,
+				676740E22507372400C87112 /* Delegates */,
+				676740E42507374300C87112 /* Data Models */,
+				676740E52507375A00C87112 /* Views */,
+				676740E32507373400C87112 /* Controllers */,
 				676740D7250736F800C87112 /* Assets.xcassets */,
 				676740D9250736F800C87112 /* LaunchScreen.storyboard */,
 				676740DC250736F800C87112 /* Info.plist */,
+				676740F425073AF400C87112 /* GoogleService-Info.plist */,
 			);
 			path = "Aviation Info";
+			sourceTree = "<group>";
+		};
+		676740E22507372400C87112 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				676740CE250736F600C87112 /* AppDelegate.swift */,
+				676740D0250736F600C87112 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		676740E32507373400C87112 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				676740D2250736F600C87112 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		676740E42507374300C87112 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				676740E62507377D00C87112 /* Dimension.swift */,
+				676740E82507378800C87112 /* BodyDimension.swift */,
+				676740EA2507379200C87112 /* EngineDimension.swift */,
+				676740EC2507379900C87112 /* Plane.swift */,
+				676740EE250737A400C87112 /* Manufacturer.swift */,
+				676740F0250737B500C87112 /* Engine.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		676740E52507375A00C87112 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				676740D4250736F600C87112 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		94A3B7EEDCA13EB3B225EE7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6CE897118E2213496C251BC /* Pods_Aviation_Info.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9A1DF1D7CE2F1B1D656EFE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E33D50BE05A5225951F2398 /* Pods-Aviation Info.debug.xcconfig */,
+				1CDCA19CAF0FD721C7452CB2 /* Pods-Aviation Info.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 676740DF250736F800C87112 /* Build configuration list for PBXNativeTarget "Aviation Info" */;
 			buildPhases = (
+				FEF82FA4B61983FC84DC6D98 /* [CP] Check Pods Manifest.lock */,
 				676740C7250736F600C87112 /* Sources */,
 				676740C8250736F600C87112 /* Frameworks */,
 				676740C9250736F600C87112 /* Resources */,
+				78A98518E4D00CC24FA29D95 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				676740DB250736F800C87112 /* LaunchScreen.storyboard in Resources */,
+				676740F525073AF400C87112 /* GoogleService-Info.plist in Resources */,
 				676740D8250736F800C87112 /* Assets.xcassets in Resources */,
 				676740D6250736F600C87112 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +213,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78A98518E4D00CC24FA29D95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aviation Info/Pods-Aviation Info-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aviation Info/Pods-Aviation Info-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aviation Info/Pods-Aviation Info-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF82FA4B61983FC84DC6D98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aviation Info-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		676740C7250736F600C87112 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				676740EB2507379200C87112 /* EngineDimension.swift in Sources */,
+				676740E72507377D00C87112 /* Dimension.swift in Sources */,
+				676740EF250737A400C87112 /* Manufacturer.swift in Sources */,
 				676740D3250736F600C87112 /* ViewController.swift in Sources */,
 				676740CF250736F600C87112 /* AppDelegate.swift in Sources */,
 				676740D1250736F600C87112 /* SceneDelegate.swift in Sources */,
+				676740E92507378800C87112 /* BodyDimension.swift in Sources */,
+				676740F1250737B500C87112 /* Engine.swift in Sources */,
+				676740ED2507379900C87112 /* Plane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		676740E0250736F800C87112 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E33D50BE05A5225951F2398 /* Pods-Aviation Info.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +423,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.henryjiang.Aviation-Info";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		676740E1250736F800C87112 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CDCA19CAF0FD721C7452CB2 /* Pods-Aviation Info.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.henryjiang.Aviation-Info";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
