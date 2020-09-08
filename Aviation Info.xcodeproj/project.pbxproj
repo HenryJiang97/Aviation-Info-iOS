@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		676740CF250736F600C87112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740CE250736F600C87112 /* AppDelegate.swift */; };
 		676740D1250736F600C87112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740D0250736F600C87112 /* SceneDelegate.swift */; };
-		676740D3250736F600C87112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740D2250736F600C87112 /* ViewController.swift */; };
 		676740D6250736F600C87112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676740D4250736F600C87112 /* Main.storyboard */; };
 		676740D8250736F800C87112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676740D7250736F800C87112 /* Assets.xcassets */; };
 		676740DB250736F800C87112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676740D9250736F800C87112 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,8 @@
 		676740EF250737A400C87112 /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740EE250737A400C87112 /* Manufacturer.swift */; };
 		676740F1250737B500C87112 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740F0250737B500C87112 /* Engine.swift */; };
 		676740F525073AF400C87112 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676740F425073AF400C87112 /* GoogleService-Info.plist */; };
+		676740F725073F7900C87112 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740F625073F7900C87112 /* HomeViewController.swift */; };
+		676740F925073F8B00C87112 /* ManufacturerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740F825073F8B00C87112 /* ManufacturerTableViewController.swift */; };
 		F759D2294F8F5199615F8D18 /* Pods_Aviation_Info.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CE897118E2213496C251BC /* Pods_Aviation_Info.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +29,6 @@
 		676740CB250736F600C87112 /* Aviation Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aviation Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		676740CE250736F600C87112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		676740D0250736F600C87112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		676740D2250736F600C87112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		676740D5250736F600C87112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		676740D7250736F800C87112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		676740DA250736F800C87112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		676740EE250737A400C87112 /* Manufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
 		676740F0250737B500C87112 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 		676740F425073AF400C87112 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		676740F625073F7900C87112 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		676740F825073F8B00C87112 /* ManufacturerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerTableViewController.swift; sourceTree = "<group>"; };
 		9E33D50BE05A5225951F2398 /* Pods-Aviation Info.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviation Info.debug.xcconfig"; path = "Target Support Files/Pods-Aviation Info/Pods-Aviation Info.debug.xcconfig"; sourceTree = "<group>"; };
 		B6CE897118E2213496C251BC /* Pods_Aviation_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aviation_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,7 +103,8 @@
 		676740E32507373400C87112 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				676740D2250736F600C87112 /* ViewController.swift */,
+				676740F625073F7900C87112 /* HomeViewController.swift */,
+				676740F825073F8B00C87112 /* ManufacturerTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -262,10 +265,11 @@
 			files = (
 				676740EB2507379200C87112 /* EngineDimension.swift in Sources */,
 				676740E72507377D00C87112 /* Dimension.swift in Sources */,
+				676740F925073F8B00C87112 /* ManufacturerTableViewController.swift in Sources */,
 				676740EF250737A400C87112 /* Manufacturer.swift in Sources */,
-				676740D3250736F600C87112 /* ViewController.swift in Sources */,
 				676740CF250736F600C87112 /* AppDelegate.swift in Sources */,
 				676740D1250736F600C87112 /* SceneDelegate.swift in Sources */,
+				676740F725073F7900C87112 /* HomeViewController.swift in Sources */,
 				676740E92507378800C87112 /* BodyDimension.swift in Sources */,
 				676740F1250737B500C87112 /* Engine.swift in Sources */,
 				676740ED2507379900C87112 /* Plane.swift in Sources */,
