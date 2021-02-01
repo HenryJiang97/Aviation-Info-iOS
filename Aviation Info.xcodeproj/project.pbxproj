@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6709F08825A99A8000C6F753 /* ManufacturerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6709F08725A99A8000C6F753 /* ManufacturerViewController.swift */; };
 		675C7D0525A2E9E40071BC93 /* ModelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C7D0425A2E9E40071BC93 /* ModelTableViewController.swift */; };
 		676740CF250736F600C87112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740CE250736F600C87112 /* AppDelegate.swift */; };
 		676740D1250736F600C87112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740D0250736F600C87112 /* SceneDelegate.swift */; };
@@ -22,13 +21,12 @@
 		676740F1250737B500C87112 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740F0250737B500C87112 /* Engine.swift */; };
 		676740F525073AF400C87112 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676740F425073AF400C87112 /* GoogleService-Info.plist */; };
 		676740F725073F7900C87112 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740F625073F7900C87112 /* HomeViewController.swift */; };
-		676740F925073F8B00C87112 /* ManufacturerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740F825073F8B00C87112 /* ManufacturerTableViewController.swift */; };
+		67AF758725C7BBA8001482EB /* ManufacturerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF758625C7BBA8001482EB /* ManufacturerViewController.swift */; };
 		F759D2294F8F5199615F8D18 /* Pods_Aviation_Info.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CE897118E2213496C251BC /* Pods_Aviation_Info.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CDCA19CAF0FD721C7452CB2 /* Pods-Aviation Info.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviation Info.release.xcconfig"; path = "Target Support Files/Pods-Aviation Info/Pods-Aviation Info.release.xcconfig"; sourceTree = "<group>"; };
-		6709F08725A99A8000C6F753 /* ManufacturerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerViewController.swift; sourceTree = "<group>"; };
 		675C7D0425A2E9E40071BC93 /* ModelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTableViewController.swift; sourceTree = "<group>"; };
 		676740CB250736F600C87112 /* Aviation Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aviation Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		676740CE250736F600C87112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +43,7 @@
 		676740F0250737B500C87112 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 		676740F425073AF400C87112 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		676740F625073F7900C87112 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		676740F825073F8B00C87112 /* ManufacturerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerTableViewController.swift; sourceTree = "<group>"; };
+		67AF758625C7BBA8001482EB /* ManufacturerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManufacturerViewController.swift; sourceTree = "<group>"; };
 		9E33D50BE05A5225951F2398 /* Pods-Aviation Info.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviation Info.debug.xcconfig"; path = "Target Support Files/Pods-Aviation Info/Pods-Aviation Info.debug.xcconfig"; sourceTree = "<group>"; };
 		B6CE897118E2213496C251BC /* Pods_Aviation_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aviation_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,9 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				676740F625073F7900C87112 /* HomeViewController.swift */,
-				676740F825073F8B00C87112 /* ManufacturerTableViewController.swift */,
 				675C7D0425A2E9E40071BC93 /* ModelTableViewController.swift */,
-				6709F08725A99A8000C6F753 /* ManufacturerViewController.swift */,
+				67AF758625C7BBA8001482EB /* ManufacturerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,7 +179,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Henry Jiang";
 				TargetAttributes = {
 					676740CA250736F600C87112 = {
@@ -271,7 +268,6 @@
 			files = (
 				676740EB2507379200C87112 /* EngineDimension.swift in Sources */,
 				676740E72507377D00C87112 /* Dimension.swift in Sources */,
-				676740F925073F8B00C87112 /* ManufacturerTableViewController.swift in Sources */,
 				676740EF250737A400C87112 /* Manufacturer.swift in Sources */,
 				676740CF250736F600C87112 /* AppDelegate.swift in Sources */,
 				676740D1250736F600C87112 /* SceneDelegate.swift in Sources */,
@@ -279,7 +275,7 @@
 				676740F725073F7900C87112 /* HomeViewController.swift in Sources */,
 				676740E92507378800C87112 /* BodyDimension.swift in Sources */,
 				676740F1250737B500C87112 /* Engine.swift in Sources */,
-				6709F08825A99A8000C6F753 /* ManufacturerViewController.swift in Sources */,
+				67AF758725C7BBA8001482EB /* ManufacturerViewController.swift in Sources */,
 				676740ED2507379900C87112 /* Plane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +328,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -356,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -392,6 +389,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -410,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
