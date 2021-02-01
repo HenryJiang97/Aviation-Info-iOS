@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6709F08825A99A8000C6F753 /* ManufacturerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6709F08725A99A8000C6F753 /* ManufacturerViewController.swift */; };
+		675C7D0525A2E9E40071BC93 /* ModelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C7D0425A2E9E40071BC93 /* ModelTableViewController.swift */; };
 		676740CF250736F600C87112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740CE250736F600C87112 /* AppDelegate.swift */; };
 		676740D1250736F600C87112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740D0250736F600C87112 /* SceneDelegate.swift */; };
 		676740D6250736F600C87112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676740D4250736F600C87112 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		1CDCA19CAF0FD721C7452CB2 /* Pods-Aviation Info.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviation Info.release.xcconfig"; path = "Target Support Files/Pods-Aviation Info/Pods-Aviation Info.release.xcconfig"; sourceTree = "<group>"; };
+		6709F08725A99A8000C6F753 /* ManufacturerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerViewController.swift; sourceTree = "<group>"; };
+		675C7D0425A2E9E40071BC93 /* ModelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTableViewController.swift; sourceTree = "<group>"; };
 		676740CB250736F600C87112 /* Aviation Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aviation Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		676740CE250736F600C87112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		676740D0250736F600C87112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,10 +83,10 @@
 		676740CD250736F600C87112 /* Aviation Info */ = {
 			isa = PBXGroup;
 			children = (
-				676740E22507372400C87112 /* Delegates */,
-				676740E42507374300C87112 /* Data Models */,
-				676740E52507375A00C87112 /* Views */,
 				676740E32507373400C87112 /* Controllers */,
+				676740E22507372400C87112 /* Delegates */,
+				676740E42507374300C87112 /* Models */,
+				676740E52507375A00C87112 /* Views */,
 				676740D7250736F800C87112 /* Assets.xcassets */,
 				676740D9250736F800C87112 /* LaunchScreen.storyboard */,
 				676740DC250736F800C87112 /* Info.plist */,
@@ -105,11 +109,13 @@
 			children = (
 				676740F625073F7900C87112 /* HomeViewController.swift */,
 				676740F825073F8B00C87112 /* ManufacturerTableViewController.swift */,
+				675C7D0425A2E9E40071BC93 /* ModelTableViewController.swift */,
+				6709F08725A99A8000C6F753 /* ManufacturerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		676740E42507374300C87112 /* Data Models */ = {
+		676740E42507374300C87112 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				676740E62507377D00C87112 /* Dimension.swift */,
@@ -119,7 +125,7 @@
 				676740EE250737A400C87112 /* Manufacturer.swift */,
 				676740F0250737B500C87112 /* Engine.swift */,
 			);
-			path = "Data Models";
+			path = Models;
 			sourceTree = "<group>";
 		};
 		676740E52507375A00C87112 /* Views */ = {
@@ -269,9 +275,11 @@
 				676740EF250737A400C87112 /* Manufacturer.swift in Sources */,
 				676740CF250736F600C87112 /* AppDelegate.swift in Sources */,
 				676740D1250736F600C87112 /* SceneDelegate.swift in Sources */,
+				675C7D0525A2E9E40071BC93 /* ModelTableViewController.swift in Sources */,
 				676740F725073F7900C87112 /* HomeViewController.swift in Sources */,
 				676740E92507378800C87112 /* BodyDimension.swift in Sources */,
 				676740F1250737B500C87112 /* Engine.swift in Sources */,
+				6709F08825A99A8000C6F753 /* ManufacturerViewController.swift in Sources */,
 				676740ED2507379900C87112 /* Plane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHM32THEL5;
 				INFOPLIST_FILE = "Aviation Info/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHM32THEL5;
 				INFOPLIST_FILE = "Aviation Info/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
