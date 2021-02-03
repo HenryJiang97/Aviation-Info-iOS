@@ -10,11 +10,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var aircraftInfoButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
     }
     
-
+    @IBAction func onAircraftInfoButtonClicked(_ sender: Any) {
+        performSegue(withIdentifier: "Home2Manufacturer", sender: nil)
+    }
+    
 }

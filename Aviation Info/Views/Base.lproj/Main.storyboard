@@ -43,7 +43,7 @@
                                     <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Zti-Ed-4o7" kind="show" id="gAk-c2-6Ug"/>
+                                    <action selector="onAircraftInfoButtonClicked:" destination="F5Z-IV-Wfb" eventType="touchUpInside" id="NqV-VR-OYH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,6 +56,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tsi-Sc-wI9"/>
+                    <connections>
+                        <outlet property="aircraftInfoButton" destination="i4u-Wr-eq2" id="2r2-89-Jvi"/>
+                        <segue destination="Zti-Ed-4o7" kind="show" identifier="Home2Manufacturer" id="1rc-dH-pYI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6JS-cy-RQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,11 +104,50 @@
                     <navigationItem key="navigationItem" id="fGk-wT-u80"/>
                     <connections>
                         <outlet property="ManufacturerTableView" destination="2AM-eJ-Nux" id="1KZ-pI-hjH"/>
+                        <segue destination="1f6-vv-yI3" kind="show" identifier="Manufacturer2Model" id="2a0-dJ-Knl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZO-Bp-eC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1917.7570093457944" y="-112.09503239740822"/>
+        </scene>
+        <!--Model View Controller-->
+        <scene sceneID="7ui-yB-7T8">
+            <objects>
+                <viewController id="1f6-vv-yI3" customClass="ModelViewController" customModule="Aviation_Info" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hiq-2Y-KCy">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="90M-kL-Otv" userLabel="Model Table View">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ModelCell" id="T72-Fx-fVP">
+                                        <rect key="frame" x="0.0" y="28" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T72-Fx-fVP" id="XNs-ey-wzw">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QA8-Tg-A8w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="90M-kL-Otv" firstAttribute="leading" secondItem="QA8-Tg-A8w" secondAttribute="leading" id="Aj1-qm-pca"/>
+                            <constraint firstItem="QA8-Tg-A8w" firstAttribute="bottom" secondItem="90M-kL-Otv" secondAttribute="bottom" id="cLM-nJ-fAu"/>
+                            <constraint firstItem="QA8-Tg-A8w" firstAttribute="trailing" secondItem="90M-kL-Otv" secondAttribute="trailing" id="fBa-bl-6Dk"/>
+                            <constraint firstItem="90M-kL-Otv" firstAttribute="top" secondItem="QA8-Tg-A8w" secondAttribute="top" id="loO-yu-9Or"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WtK-3c-hV1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CsL-hv-54q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2874" y="-112"/>
         </scene>
     </scenes>
     <resources>

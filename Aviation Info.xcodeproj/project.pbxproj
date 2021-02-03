@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		675C7D0525A2E9E40071BC93 /* ModelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C7D0425A2E9E40071BC93 /* ModelTableViewController.swift */; };
+		675C7D0525A2E9E40071BC93 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C7D0425A2E9E40071BC93 /* ModelViewController.swift */; };
 		676740CF250736F600C87112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740CE250736F600C87112 /* AppDelegate.swift */; };
 		676740D1250736F600C87112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676740D0250736F600C87112 /* SceneDelegate.swift */; };
 		676740D6250736F600C87112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676740D4250736F600C87112 /* Main.storyboard */; };
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		1CDCA19CAF0FD721C7452CB2 /* Pods-Aviation Info.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviation Info.release.xcconfig"; path = "Target Support Files/Pods-Aviation Info/Pods-Aviation Info.release.xcconfig"; sourceTree = "<group>"; };
-		675C7D0425A2E9E40071BC93 /* ModelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTableViewController.swift; sourceTree = "<group>"; };
+		675C7D0425A2E9E40071BC93 /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
 		676740CB250736F600C87112 /* Aviation Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aviation Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		676740CE250736F600C87112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		676740D0250736F600C87112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				676740F625073F7900C87112 /* HomeViewController.swift */,
-				675C7D0425A2E9E40071BC93 /* ModelTableViewController.swift */,
+				675C7D0425A2E9E40071BC93 /* ModelViewController.swift */,
 				67AF758625C7BBA8001482EB /* ManufacturerViewController.swift */,
 			);
 			path = Controllers;
@@ -271,7 +271,7 @@
 				676740EF250737A400C87112 /* Manufacturer.swift in Sources */,
 				676740CF250736F600C87112 /* AppDelegate.swift in Sources */,
 				676740D1250736F600C87112 /* SceneDelegate.swift in Sources */,
-				675C7D0525A2E9E40071BC93 /* ModelTableViewController.swift in Sources */,
+				675C7D0525A2E9E40071BC93 /* ModelViewController.swift in Sources */,
 				676740F725073F7900C87112 /* HomeViewController.swift in Sources */,
 				676740E92507378800C87112 /* BodyDimension.swift in Sources */,
 				676740F1250737B500C87112 /* Engine.swift in Sources */,
