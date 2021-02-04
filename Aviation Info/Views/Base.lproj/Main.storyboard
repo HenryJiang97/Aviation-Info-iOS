@@ -132,6 +132,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1f6-vv-yI3" id="nLd-eX-VFW"/>
+                                    <outlet property="delegate" destination="1f6-vv-yI3" id="NGm-t2-KXM"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QA8-Tg-A8w"/>
@@ -144,6 +148,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WtK-3c-hV1"/>
+                    <connections>
+                        <outlet property="ModelTableView" destination="90M-kL-Otv" id="IdO-n2-OHY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsL-hv-54q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

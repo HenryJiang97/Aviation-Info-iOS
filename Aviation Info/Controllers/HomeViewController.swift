@@ -16,7 +16,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        // View Controller configuration
+        self.title = "Home"
     }
     
     @IBAction func onAircraftInfoButtonClicked(_ sender: Any) {

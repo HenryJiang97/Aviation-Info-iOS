@@ -17,24 +17,27 @@ class ManufacturerViewController: UIViewController {
     var manufacturers: [String] = []
     var db : Firestore!
 
-    @IBOutlet weak var ManufacturerTableView: UITableView!
+    @IBOutlet weak var manufacturerTableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Firebase setup
+        // View Controller configuration
+        self.title = "Manufacturer"
+        
+        // Firebase configuration
         let settings = FirestoreSettings()
         Firestore.firestore().settings = settings
-        
         db = Firestore.firestore()
 
-        getCollection()
+        // Fetch database data
+        getData()
     }
     
     // Get data from Firestore collection
-    func getCollection() {
-        db.collection("Planes").getDocuments { (querySnapshot, err) in
+    func getData() {
+        db.collection("Manufacturer").getDocuments { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
@@ -44,7 +47,7 @@ class ManufacturerViewController: UIViewController {
                 }
             }
             DispatchQueue.main.async {
-                self.ManufacturerTableView.reloadData()
+                self.manufacturerTableView.reloadData()
             }
         }
     }
@@ -77,5 +80,13 @@ extension ManufacturerViewController: UITableViewDelegate, UITableViewDataSource
         performSegue(withIdentifier: "Manufacturer2Model", sender: nil)
     }
     
+    // Prepare for segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Manufacturer2Model") {
+            let destination = segue.destination as? ModelViewController
+            let index = manufacturerTableView.indexPathForSelectedRow?.row
+            destination?.manufacturer = manufacturers[index!]
+        }
+    }
     
 }
